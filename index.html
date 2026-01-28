@@ -464,30 +464,6 @@ body.locked #content {
   transform:translateY(0) scale(1);
 }
 
-/* ===== FORCE MOBILE VIEW ON DESKTOP ===== */
-.phone-frame {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-  background: black;
-}
-
-/* Desktop → tampil seperti HP */
-@media (min-width: 768px) {
-  body {
-    background: #111;
-  }
-
-  .phone-frame {
-    width: 390px;              /* ukuran iPhone 14 */
-    max-width: 430px;          /* aman untuk Android */
-    height: 100vh;
-    box-shadow: 0 0 40px rgba(0,0,0,0.6);
-    overflow-y: auto;
-    border-radius: 18px;
-  }
-}
-
 /* container */
 .lokasi-toggle {
   position: absolute;
@@ -615,12 +591,10 @@ body.locked #content {
 }
 
 
-
 </style>
 </head>
 
 <body class="locked">
-<div class="phone-frame">
 
 <button id="musicToggle" class="music-btn hidden">🎶</button>
 
@@ -1001,4 +975,5 @@ Tombol Copy
 </script>
 
 </body>
+
 </html>
